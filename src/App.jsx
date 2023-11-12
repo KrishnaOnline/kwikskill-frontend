@@ -45,7 +45,6 @@ function App() {
         <div className='hidden md:flex'>
           <Navbar/>
         </div>
-        <p>vbsdjhxkbvn dfcbv fm,jk</p>
         <div className='flex md:hidden'>
           <NavbarMobile/>
         </div>
