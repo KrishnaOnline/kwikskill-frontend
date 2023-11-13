@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { apiConnector } from '../services/apiConnector'
 import { categories } from '../services/apis'
 import { Link } from 'react-router-dom'
+import Spinner from '../Components/Common/Spinner'
 
 
 const Categories = () => {
@@ -21,6 +22,12 @@ const Categories = () => {
     useEffect(() => {
         fetchCategories();
     }, [])
+
+    if(!allCategories.length) {
+        return (
+            <Spinner/>
+        )
+    }
   return (
     <div className='categories-page'>
         <div className='w-11/12 max-w-[1280px] mx-auto min-h-[750px] flex flex-col'>
