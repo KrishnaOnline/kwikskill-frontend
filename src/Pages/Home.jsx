@@ -43,8 +43,8 @@ const Home = () => {
           </div>
         </div>
         <div className='flex pt-12 md:pt-5 flex-row gap-5'>
-          <button className='border bg-[#002456] border-black px-3 p-2 font-medium text-white rounded-lg hover:bg-white hover:text-black'>SignUp</button>
-          <button className='border bg-[#002456] border-black px-3 p-2 font-medium text-white rounded-lg hover:bg-white hover:text-black'>LogIn</button>
+          <Link to={'/signup'}><button className='border bg-[#002456] border-black px-3 p-2 font-medium text-white rounded-lg hover:bg-white hover:text-black'>SignUp</button></Link>
+          <Link to={'/login'}><button className='border bg-[#002456] border-black px-3 p-2 font-medium text-white rounded-lg hover:bg-white hover:text-black'>LogIn</button></Link>
         </div>
       </section>
     </div>
