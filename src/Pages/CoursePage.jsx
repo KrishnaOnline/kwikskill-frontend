@@ -78,7 +78,7 @@ const CoursePage = () => {
       const timeOutId = setTimeout(() => {
         setShowSpinner(false)
         setShowError(true)
-      }, 2000)
+      }, 5000)
       return () => clearTimeout(timeOutId)
     }, [])
     
