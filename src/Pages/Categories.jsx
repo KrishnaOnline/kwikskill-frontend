@@ -23,16 +23,16 @@ const Categories = () => {
         fetchCategories();
     }, [])
 
-    if(!allCategories.length) {
-        return (
-            <Spinner/>
-        )
-    }
   return (
     <div className='categories-page'>
         <div className='w-11/12 max-w-[1280px] mx-auto min-h-[750px] flex flex-col'>
             <h1 className='text-4xl font-semibold mt-7 mb-7'>Categories</h1>
             <div className='flex items-center max-md:justify-center mx-auto flex-wrap gap-5'>
+                {
+                    allCategories.length === 0 && (
+                        <Spinner/>
+                    )
+                }
                 {
                     allCategories.length > 0
                     ? (
