@@ -104,7 +104,7 @@ const CoursePage = () => {
             <p className='text-lg'>Created By <span className='text-blue-600 underline font-medium'>{response?.instructor?.firstName + ' ' + response?.instructor?.lastName}</span></p>
             <p className='text-lg'>Last Updated On {formatTime(response?.createdAt)}</p>
           </div>
-          <div className='order-1 md:order-2 text-black flex flex-col justify-center bg-white md:max-w-[370px] md:pb-16 p-5 border border-gray-600 rounded-xl shadow-lg'>
+          <div className='order-1 md:order-2 text-black flex flex-col justify-center bg-white md:max-w-[400px] md:pb-16 p-5 border border-gray-600 rounded-xl shadow-lg'>
             <img className='w-[450px] mx-auto h-[250px] shadow-lg rounded-xl' src={response?.thumbnail} alt={response?.courseName}/>
             <div className='flex flex-col gap-3 my-3 md:mt-9 md:hidden'>
               <p className='text-3xl font-bold'>{response?.courseName}</p>
