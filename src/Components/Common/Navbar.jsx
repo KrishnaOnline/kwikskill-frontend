@@ -64,7 +64,7 @@ const Navbar = () => {
                                 <BsCart className='relative' fontSize={27}/>
                                 {
                                     totalItems > 0 && (
-                                        <p className='absolute translate-x-2 border rounded-full p-1 bg-blue-800 text-white'>
+                                        <p className='absolute translate-x-2 border rounded p-1 bg-blue-800 text-white'>
                                             {totalItems}
                                         </p>
                                     )
