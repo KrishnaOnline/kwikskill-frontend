@@ -32,23 +32,27 @@ const CoursePage = () => {
     // const [alreadyEnrolled, setAlreadyEnrolled] = useState(false)
     const [totalLectures, setTotalLectures] = useState(0)
     const handleBuyCourse = () => {
+      if(!token) {
+        toast("Please Login to Purchase Course", {icon: '⚠️'})
+        navigate('/login')
+      }
       if(user?.accountType === ACCOUNT_TYPE.INSTRUCTOR) {
         toast("You Cannot Buy Course from Instructor Account", {icon: '⚠️'})
       }
       if(user?.accountType === ACCOUNT_TYPE.STUDENT) {
         if(token) {
           buyCourse(token, [courseId], user, navigate, dispatch)
-        } else {
-          // toast("Please Login to Purchase Course", {icon: '⚠️'})
-          toast.error('Please Login to Purchase Course')
-          navigate('/login')
         }
       }
     }
     const handleAddToCart = () => {
+      if(!token) {
+        toast("Please Login to Purchase Course", {icon: '⚠️'})
+        navigate('/login')
+      }
       if(user && user?.accountType === ACCOUNT_TYPE.INSTRUCTOR) {
-        // toast("You Cannot Buy Course from Instructor Account", {icon: '⚠️'})
-        toast.error('You Cannot Buy Course from Instructor Account')
+        toast("You Cannot Buy Course from Instructor Account", {icon: '⚠️'})
+        // toast.error('You Cannot Buy Course from Instructor Account')
       }
       if(token) {
         if(user?.accountType === ACCOUNT_TYPE.STUDENT) {
