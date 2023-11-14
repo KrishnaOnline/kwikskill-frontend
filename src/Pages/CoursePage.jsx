@@ -34,7 +34,7 @@ const CoursePage = () => {
     const handleBuyCourse = () => {
       if(!token) {
         toast("Please Login to Purchase Course", {icon: '⚠️'})
-        navigate('/login')
+        // navigate('/login')
       }
       if(user?.accountType === ACCOUNT_TYPE.INSTRUCTOR) {
         toast("You Cannot Buy Course from Instructor Account", {icon: '⚠️'})
@@ -48,7 +48,7 @@ const CoursePage = () => {
     const handleAddToCart = () => {
       if(!token) {
         toast("Please Login to Purchase Course", {icon: '⚠️'})
-        navigate('/login')
+        // navigate('/login')
       }
       if(user && user?.accountType === ACCOUNT_TYPE.INSTRUCTOR) {
         toast("You Cannot Buy Course from Instructor Account", {icon: '⚠️'})
