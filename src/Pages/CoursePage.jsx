@@ -39,14 +39,16 @@ const CoursePage = () => {
         if(token) {
           buyCourse(token, [courseId], user, navigate, dispatch)
         } else {
-          toast("Please Login to Purchase Course", {icon: '⚠️'})
+          // toast("Please Login to Purchase Course", {icon: '⚠️'})
+          toast.error('Please Login to Purchase Course')
           navigate('/login')
         }
       }
     }
     const handleAddToCart = () => {
       if(user && user?.accountType === ACCOUNT_TYPE.INSTRUCTOR) {
-        toast("You Cannot Buy Course from Instructor Account", {icon: '⚠️'})
+        // toast("You Cannot Buy Course from Instructor Account", {icon: '⚠️'})
+        toast.error('You Cannot Buy Course from Instructor Account')
       }
       if(token) {
         if(user?.accountType === ACCOUNT_TYPE.STUDENT) {
