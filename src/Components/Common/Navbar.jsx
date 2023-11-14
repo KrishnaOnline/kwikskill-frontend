@@ -61,10 +61,10 @@ const Navbar = () => {
                     user && user?.accountType != ACCOUNT_TYPE.INSTRUCTOR && (
                         <Link to={'/dashboard/cart'}>
                             <div className='flex items-center gap-1'>
-                                <BsCart fontSize={27}/>
+                                <BsCart className='relative' fontSize={27}/>
                                 {
                                     totalItems > 0 && (
-                                        <p className='border rounded-full p-1 bg-blue-800 text-white'>
+                                        <p className='absolute translate-x-2 border rounded-full p-1 bg-blue-800 text-white'>
                                             {totalItems}
                                         </p>
                                     )
