@@ -60,14 +60,16 @@ const Navbar = () => {
                 {
                     user && user?.accountType != ACCOUNT_TYPE.INSTRUCTOR && (
                         <Link to={'/dashboard/cart'}>
-                            <BsCart fontSize={27}/>
-                            {
-                                totalItems > 0 && (
-                                    <span>
-                                        {totalItems}
-                                    </span>
-                                )
-                            }
+                            <div className='flex items-center gap-3'>
+                                <BsCart fontSize={27}/>
+                                {
+                                    totalItems > 0 && (
+                                        <p className='border rounded-full p-1 bg-blue-800 text-white'>
+                                            {totalItems}
+                                        </p>
+                                    )
+                                }
+                            </div>
                         </Link>
                     )
                 }
