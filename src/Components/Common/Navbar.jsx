@@ -64,7 +64,7 @@ const Navbar = () => {
                                 <BsCart className='' fontSize={27}/>
                                 {
                                     totalItems > 0 && (
-                                        <p className='border p-1 text-white'>
+                                        <p className='border p-1 text-black'>
                                             {totalItems}
                                         </p>
                                     )
