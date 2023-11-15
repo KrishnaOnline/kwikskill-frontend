@@ -63,7 +63,7 @@ const CategoryPage = () => {
       </div>
       <div className='w-11/12 max-w-[1280px] mx-auto flex flex-col'>
         <div>
-          <p className='text-4xl font-medium px-5 mt-6 mb-3'>{selectedCategDetails?.name} Courses</p>
+          <p className='text-4xl font-medium px-5 mt-6 mb-6'>{selectedCategDetails?.name} Courses</p>
           <div className='flex flex-wrap items-center px-5 justify-center md:justify-start gap-8'>
             {
               !selectedCategDetails?.courses.length ? (
