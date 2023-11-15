@@ -78,7 +78,7 @@ const CategoryPage = () => {
           </div>
         </div>
         <hr className='mt-9 mb-5'/>
-        <div>
+        {/* <div>
           <p className='text-4xl font-medium px-5 mb-3'>Other Popular Courses</p>
           <div className='flex flex-wrap px-5 items-center justify-center md:justify-start gap-8'>
             {
@@ -92,7 +92,7 @@ const CategoryPage = () => {
               ))
             }
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )
