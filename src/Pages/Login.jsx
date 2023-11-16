@@ -57,6 +57,23 @@ const Login = () => {
         <div>
           <p>Not Registered Yet? <span className='text-blue-700 underline'><Link to='/signup'>Signup</Link></span></p>
         </div>
+        <div className='mx-auto max-md:w-[90%] border p-3 flex flex-col rounded-lg shadow-lg items-center justify-center mt-5'>
+            <p className='text-lg text-center font-bold underline mb-2'>Test Credentials: </p>
+            <hr />
+            <div className='flex gap-3'>
+              <div>
+                <p className='font-medium mb-1 underline'>Instructor: </p>
+                <p><span className='font-medium'>Email:</span> ins01@mail.com</p>
+                <p><span className='font-medium'>Password:</span> 123456</p>
+              </div>
+              <div className='w-[1px] bg-black'></div>
+              <div>
+                <p className='font-medium mb-1 underline'>Student: </p>
+                <p><span className='font-medium'>Email:</span> stud01@mail.com</p>
+                <p><span className='font-medium'>Password:</span> 123456</p>
+              </div>
+            </div>
+        </div>
     </div>
     )
   )
