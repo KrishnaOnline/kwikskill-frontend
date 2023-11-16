@@ -81,7 +81,7 @@ export default function Upload({
             )}
           </div>
         ) : (
-          <div className="flex w-full flex-col items-center p-6">
+          <div className="flex w-full flex-col items-center">
             <input
               type="file"
               accept={video ? "video/*" : "image/*"}
