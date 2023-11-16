@@ -61,7 +61,7 @@ export default function Upload({
               <img
                 src={previewSource}
                 alt="Preview"
-                className="h-[150px] w-[250px] rounded-md object-cover"
+                className="h-[250px] w-[250px] rounded-md object-cover"
               />
             ) : (
               <Player aspectRatio="16:9" playsInline src={previewSource} />
