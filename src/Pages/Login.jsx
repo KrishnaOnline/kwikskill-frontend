@@ -58,7 +58,7 @@ const Login = () => {
           <p>Not Registered Yet? <span className='text-blue-700 underline'><Link to='/signup'>Signup</Link></span></p>
         </div>
         <div className='mx-auto max-md:w-[90%] border p-3 flex flex-col rounded-lg shadow-lg items-center justify-center mt-5'>
-            <p className='text-lg text-center font-bold underline mb-2'>Test Credentials: </p>
+            <p className='text-lg text-center font-bold underline mb-3'>Test Credentials: </p>
             <hr />
             <div className='flex gap-3'>
               <div>
