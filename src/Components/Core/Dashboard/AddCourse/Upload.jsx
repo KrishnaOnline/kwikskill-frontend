@@ -88,17 +88,17 @@ export default function Upload({
               ref={inputRef}
               onChange={onFileChange}
             />
-            <div className="grid aspect-square w-14 place-items-center rounded-full bg-pure-greys-800">
+            {/* <div className="grid aspect-square w-14 place-items-center rounded-full bg-pure-greys-800">
               <FiUploadCloud className="text-2xl text-black" />
             </div>
             <p className="mt-2 max-w-[200px] text-center text-sm text-richblack-200">
               Click to <span className="font-semibold text-black">Browse</span> a
               {video ? " video" : "n image"}
-            </p>
-            <ul className="mt-10 flex list-disc justify-between space-x-12 text-center text-xs text-richblack-200">
+            </p> */}
+            {/* <ul className="mt-10 flex list-disc justify-between space-x-12 text-center text-xs text-richblack-200">
               <li>Aspect ratio 16:9</li>
               <li>Recommended size 1024x576</li>
-            </ul>
+            </ul> */}
           </div>
         )}
       </div>
