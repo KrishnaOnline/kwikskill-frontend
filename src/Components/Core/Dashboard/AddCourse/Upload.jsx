@@ -81,11 +81,12 @@ export default function Upload({
             )}
           </div>
         ) : (
-          <div className="flex w-full flex-col items-center">
+          <div className="">
             <input
               type="file"
               accept={video ? "video/*" : "image/*"}
               ref={inputRef}
+              required
               onChange={onFileChange}
             />
             {/* <div className="grid aspect-square w-14 place-items-center rounded-full bg-pure-greys-800">
@@ -102,11 +103,11 @@ export default function Upload({
           </div>
         )}
       </div>
-      {errors[name] && (
+      {/* {errors[name] && (
         <span className="ml-2 text-xs tracking-wide text-pink-200">
           {label} is required
         </span>
-      )}
+      )} */}
     </div>
   );
 }
