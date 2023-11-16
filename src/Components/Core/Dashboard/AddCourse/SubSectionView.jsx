@@ -38,7 +38,7 @@ const SubSectionView = ({handleChangeEditSectionName}) => {
   return (
     <div>
         <p className='text-center mb-5 text-base'>(Please Go Back and Try Again, if any of the button is NOT WORKING)</p>
-        <div className='w-9/12 mx-auto'>
+        <div className='w-full md:w-9/12 mx-auto'>
             {
                 course?.courseContent?.map((section, index) => (
                     <details className='cursor-pointer w-full' key={index} open>
