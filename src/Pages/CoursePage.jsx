@@ -99,7 +99,7 @@ const CoursePage = () => {
     <div className='mx-auto max-w-[1280px]'>
         <div className='' /*className='md:bg-[#1f3a78] md:bg-opacity-95 md:h-[350px]'*/>
         <div className='max-w-[1280px] md:h-fit text-black px-6 py-8 mx-auto flex flex-col md:flex-row justify-center mb-5 items-center gap-y-5 md:justify-between'>
-          <div className='flex flex-col gap-3 order-2 md:order-1 md:mt-9 max-md:hidden'>
+          <div className='flex flex-col gap-3 order-2 md:order-1 md:mt-9 -translate-x-10 max-md:hidden'>
             <p className='text-4xl font-bold'>{response?.courseName}</p>
             <p className='text-xl mt-3 font-normal'>{response?.courseDescription}</p>
             <div className='flex items-center text-xl mt-3 gap-2'>
