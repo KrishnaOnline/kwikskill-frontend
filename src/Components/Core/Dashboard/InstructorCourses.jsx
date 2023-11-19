@@ -61,7 +61,7 @@ const InstructorCourses = () => {
                                         <p className='text-lg'>{course?.courseDescription.slice(0, 50)}</p>
                                         <p>{course?.category?.name}</p>
                                         <p><span className='font-semibold'>Price: </span>₹{course?.price}</p>
-                                        <p>Ratings and Reviews Add Kardo Yaha</p>
+                                        {/* <p>Ratings and Reviews Add Kardo Yaha</p> */}
                                         <p className={`border w-fit p-2 rounded-3xl font-medium bg-opacity-60 ${course?.status === COURSE_STATUS.PUBLISHED ? "bg-green-500" : "bg-yellow-500"}`}>
                                             {course?.status === COURSE_STATUS.PUBLISHED ? "Published" : "Drafted"}
                                         </p>
