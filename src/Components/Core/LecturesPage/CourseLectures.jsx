@@ -54,7 +54,7 @@ const CourseLectures = ({reviewSection, setReviewSection}) => {
 
   return (
     <div className=''>
-      <div className=''>
+      <div onContextMenu={(event) => event.preventDefault()} className=''>
         <Player
           ref={playerRef}
           aspectRatio='16:9'
