@@ -20,9 +20,12 @@ const CoursePage = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch()
     const {user} = useSelector(state => state.profile)
-    // const {token} = useSelector(state => state.auth)
-    const userLocal = localStorage.getItem('user')
-    const {token} = JSON.parse(userLocal)
+    if(user) {
+      const userLocal = localStorage.getItem('user')
+      const {token} = JSON.parse(userLocal)
+    } else {
+      const {token} = useSelector(state => state.auth)
+    }
     const {paymentLoading} = useSelector(state => state.course)
     const {cart} = useSelector(state => state.cart)
     //console.log("TOKEN: ", token)
