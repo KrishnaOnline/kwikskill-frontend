@@ -8,7 +8,9 @@ import { RxCross1 } from 'react-icons/rx'
 
 const ReviewBox = ({setReviewSection}) => {
   const {user} = useSelector(state => state.profile)
-  const {token} = useSelector(state => state.auth.token)
+  // const {token} = useSelector(state => state.auth.token)
+  const userLocal = localStorage.getItem('user')
+  const {token} = JSON.parse(userLocal)
   const {courseEntireData} = useSelector(state => state.viewCourse)
   const [ratingValue, setRatingValue] = useState(0)
   const {register, handleSubmit, setValue, getValues, formState: {errors}} = useForm()
