@@ -63,7 +63,7 @@ export const buyCourse = async (token, courses, userDetails, navigate, dispatch,
             toast.error("Something is Wrong with Razorpay, Please Try Again Later")
         })
     } catch(err) {
-        toast.error(err.message)
+        toast.error(/*err.message*/ "Something went Wrong, Please Add to Cart and Try Again")
         //console.log(err)
     }
     toast.dismiss(toastId)
