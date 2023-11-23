@@ -32,8 +32,8 @@ const CoursePage = () => {
     // const [alreadyEnrolled, setAlreadyEnrolled] = useState(false)
     const [totalLectures, setTotalLectures] = useState(0)
     const handleBuyCourse = () => {
-      const userLocal = localStorage.getItem('user')
-      const {token} = JSON.parse(userLocal)
+      // const userLocal = localStorage.getItem('user')
+      // const {token} = JSON.parse(userLocal)
       if(!token) {
         toast("Please Login to Purchase Course", {icon: '⚠️'})
         // navigate('/login')
