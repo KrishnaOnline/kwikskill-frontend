@@ -75,7 +75,7 @@ const EnrolledCourses = () => {
                                     <p className='mb-3'>Course Progress: {progress?.completedVideos?.length/totalNoOfLectures(course)*100}%</p>
                                     <p className='text-base mb-3 font-medium'>{progress?.completedVideos?.length} of {totalNoOfLectures(course)} Lectures Completed</p>
                                     <ProgressBar
-                                      completed={(progress?.completedVideos?.length/totalNoOfLectures(course)*100).toFixed(2)}
+                                      completed={(progress?.completedVideos?.length/totalNoOfLectures(course)).toFixed(2)*100}
                                       bgColor="#8a1bcd"
                                       labelAlignment="outside"
                                       labelColor="black"
