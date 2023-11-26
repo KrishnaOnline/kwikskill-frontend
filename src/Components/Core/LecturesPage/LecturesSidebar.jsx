@@ -48,7 +48,7 @@ const LecturesSidebar = () => {
             <p className='font-semibold text-lg'>{courseEntireData?.courseName}</p>
             <p>{completedLectures?.length}/{totalNoOfLectures} Completed</p>
             <ProgressBar
-                completed={((completedLectures?.length || 0)/(totalNoOfLectures || 1)).toFixed(3)*100}
+                completed={((completedLectures?.length || 0)/(totalNoOfLectures || 1)).toFixed(2)*100}
                 bgColor="#8a1bcd"
                 labelAlignment="outside"
                 labelColor="black"
