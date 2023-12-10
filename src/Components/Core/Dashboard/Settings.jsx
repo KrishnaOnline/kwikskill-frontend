@@ -58,17 +58,18 @@ const Settings = () => {
         const accountDeleteHandler = async () => {
             if(user.email === "stud01@mail.com" || user.email === "ins01@mail.com") {
                 toast.error("You cannot Delete Demo User Account")
-            }
-            const confirmResponse = confirm("Are You Sure to Delete Your Account ?")
-            if(confirmResponse) {
-                let enterEmail = prompt("Enter Your Associated Email: ")
-                if(enterEmail === user.email) {
-                    dispatch(deleteAccount(token, navigate))
-                    dispatch(logout(navigate))
-                } else {
-                    toast.error("Incorrect Email Address")
+            } else {
+                const confirmResponse = confirm("Are You Sure to Delete Your Account ?")
+                if(confirmResponse) {
+                    let enterEmail = prompt("Enter Your Associated Email: ")
+                    if(enterEmail === user.email) {
+                        dispatch(deleteAccount(token, navigate))
+                        dispatch(logout(navigate))
+                    } else {
+                        toast.error("Incorrect Email Address")
+                    }
                 }
-            }
+            } 
         }
         
   return (
