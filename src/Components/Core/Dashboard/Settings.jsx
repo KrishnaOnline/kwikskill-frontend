@@ -59,7 +59,9 @@ const Settings = () => {
             const confirmResponse = confirm("Are You Sure to Delete Your Account ?")
             if(confirmResponse) {
                 let enterEmail = prompt("Enter Your Associated Email: ")
-                if(enterEmail === user.email) {
+                if(enterEmail === "stud01@mail.com" || enterEmail === "ins01@mail.com") {
+                    toast.error("You cannot Delete Demo User Account")
+                } else if(enterEmail === user.email) {
                     dispatch(deleteAccount(token, navigate))
                     dispatch(logout(navigate))
                 } else {
